@@ -44,17 +44,34 @@ A robust Python script for uploading large directories to AWS S3 with advanced f
 
 1. **Clone or download the script files:**
    ```bash
-   # Download the script files to your desired directory
-   curl -O https://raw.githubusercontent.com/your-repo/s3_large_upload.py
-   curl -O https://raw.githubusercontent.com/your-repo/requirements.txt
+   # Clone the repository
+   git clone https://github.com/deepanshu-ht/s3-upload-script.git
+   cd s3-upload-script
+   
+   # Or download individual files
+   curl -O https://raw.githubusercontent.com/deepanshu-ht/s3-upload-script/main/s3_large_upload.py
+   curl -O https://raw.githubusercontent.com/deepanshu-ht/s3-upload-script/main/requirements.txt
    ```
 
-2. **Install Python dependencies:**
+2. **Create and activate virtual environment (recommended):**
+   ```bash
+   # Create virtual environment
+   python -m venv s3-upload-env
+   
+   # Activate virtual environment
+   # On macOS/Linux:
+   source s3-upload-env/bin/activate
+   
+   # On Windows:
+   s3-upload-env\Scripts\activate
+   ```
+
+3. **Install Python dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Configure AWS credentials** (choose one method):
+4. **Configure AWS credentials** (choose one method):
 
    **Option A: AWS CLI**
    ```bash
@@ -73,7 +90,7 @@ A robust Python script for uploading large directories to AWS S3 with advanced f
    aws configure --profile myprofile
    ```
 
-4. **Verify S3 access:**
+5. **Verify S3 access:**
    ```bash
    aws s3 ls s3://your-bucket-name
    ```

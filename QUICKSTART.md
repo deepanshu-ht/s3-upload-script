@@ -10,10 +10,18 @@ Get started with S3 Large Directory Upload in just a few minutes!
 ## Installation
 
 ```bash
-# 1. Install dependencies
+# 1. Clone the repository
+git clone https://github.com/deepanshu-ht/s3-upload-script.git
+cd s3-upload-script
+
+# 2. Create and activate virtual environment
+python -m venv s3-upload-env
+source s3-upload-env/bin/activate  # On Windows: s3-upload-env\Scripts\activate
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 2. Make script executable
+# 4. Make script executable
 chmod +x s3_large_upload.py
 ```
 

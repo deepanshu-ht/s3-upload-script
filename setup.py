@@ -13,12 +13,12 @@ long_description = (this_directory / "README.md").read_text()
 setup(
     name="s3-large-upload",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Deepanshu Narang",
+    author_email="dn@hyathi.com",
     description="A robust script for uploading large directories to AWS S3",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/s3-large-upload",
+    url="https://github.com/deepanshu-ht/s3-upload-script",
     py_modules=["s3_large_upload"],
     classifiers=[
         "Development Status :: 4 - Beta",
